@@ -1,0 +1,253 @@
+/** CSS for portfolio site (need to make sure that classes and id's are being used appropriately e.g. id for one page, classes for multi-pages) 
+This is style 1 (white, black and blue)
+*/
+
+/** COMMON SITE FEATURES */
+
+body {
+	background-color: white;
+	color: black;
+	font-family: Letter Gothic Std, Arial, sans-serif; /** might alternate between Letter Gothic Std and Orator Std */
+	overflow-x: hidden;
+}
+
+header {
+	text-align: center;
+	font-size: 32px;
+}
+
+nav {
+	text-align: center;
+}
+
+#matthew { 
+	
+	border-top: 1px solid #3333ff;
+	border-right: 1px solid black;
+	padding-right: 5px;
+}
+
+#aileru {
+	color: #3333ff;
+	border-bottom: 1px solid black;
+	border-left: 1px solid #3333ff;
+	padding-left: 5px;
+}
+
+a.sites, a.others, a.cvtemp-page {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	margin: 0px 15px;
+}
+
+a.sites:hover {
+	color: #3333ff;
+	border-top: 1px solid #3333ff;
+	border-right: 1px solid black;
+}
+
+a.others:hover {
+	color: #3333ff;
+	border-bottom: 1px solid black;
+	border-left: 1px solid #3333ff;
+}
+
+a.cvtemp-page:hover {
+	color: #3333ff;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid #3333ff;
+	border-bottom: 0px;
+}
+
+a.sites {
+	border-top: 1px dotted black;
+	border-right: 1px dotted #3333ff;
+	padding-right: 2px;
+}
+
+a.others {
+	border-bottom: 1px dotted #3333ff;
+	border-left: 1px dotted black;
+	padding-left: 2px;
+}
+
+a.cvtemp-page {
+	border-bottom: 1px dotted #3333ff;
+	border-left: 1px dotted #3333ff;
+	border-right: 1px dotted black;
+}
+
+p {
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+footer p {
+	text-align: center;
+	font-size: 15px;
+	padding-top: 20px;
+}
+
+p.para-frmt {
+	width: 750px;
+	text-align: center;
+	margin-left: 295px;
+}
+
+/** LANDING PAGE */
+
+.intro p {
+	
+}
+
+a#enter {
+	
+}
+
+a#enter:hover {
+	color: #99ccff;
+	/**text-decoration: underline;*/
+}
+
+
+/** PORTFOLIO (SITES) PAGE */
+
+.content-sites {
+	/**
+	position: relative;
+	left: 40px;
+	top: 40px;
+	*/
+	margin: 40px;
+}
+
+.content-sites img {
+	padding: 1px;
+	margin: 3px;
+	text-align: center;
+	display: inline;
+}
+
+.content-sites img:hover {
+	/** maybe use the same "half and half" border scheme */
+}
+
+#empty {
+	background-color: #e6e6e6;
+	opacity: 0.8;
+}
+
+#empty:hover {
+	background-color: #cccccc;
+}
+
+/** INDIVIDUAL PAGES */
+h2 { 
+	font-size: 46px;
+	text-align: center;
+}
+/**
+p { 
+	position: relative;
+	left: 360px;
+	font-size: 28px;
+	text-align: center;
+	width: 600px;
+}
+*/
+
+#halc, #rapp, #bakery, #cafe { /** halcIconic, rApp and The Bakery profile pages */
+	position: relative;
+	left: 290px;
+}
+
+#hart, #sdc { /** The Hart Gallery and SDC profile pages */
+	position: relative;
+	left: 215px;
+}
+
+/**#sites, #others {background-color: #3e76a5;}*/
+
+/** SDC site page */
+a#sdc-link {
+	color: black;
+	text-decoration: none;
+	/**text-indent: 400px;*/
+	display: block;
+	/**clear: both;*/
+	border-top: 1px dotted black;
+	border-right: 1px dotted #000033;
+	padding-right: 2px;
+	width: 270px;
+	margin-left: 550px; 
+	margin-bottom: 20px;
+}
+
+a#sdc-link:hover {
+	color: #3333ff;
+	border-top: 1px solid #3333ff;
+	border-right: 1px solid black;
+	padding-right: 2px;
+	width: 270px;
+}
+/**
+#sdc-link p {
+	
+	
+}
+*/
+/** PORTFOLIO (OTHERS) PAGE */
+.content-others {
+	margin: 50px 100px;
+}
+
+.content-others img{
+	padding: 9px;	
+}
+
+/** Menu interface page (logos, backgrounds and CV templates) */
+
+div.others-submenu {
+	margin-bottom: 250px;
+	margin-left: 365px;
+	margin-top: 50px;
+}
+
+div.others-submenu a {
+	/**
+	position: relative;
+	top: 5px;
+	left: 350px;
+	*/
+	text-decoration: none;
+	color: blue;
+	font-size: 30px;
+	margin: 0px 15px;
+	border-left: 1px dotted blue;
+	border-bottom: 1px dotted black;
+	border-right: 1px dotted blue;
+}
+
+div.others-submenu a:hover {
+	color: black;
+	border-top: 1px solid #3333ff;
+	border-right: 1px solid black;
+}
+
+/** CV templates */
+.cv-templates {
+	margin: 50px 100px;
+}
+
+.cv-templates img{
+	padding: 9px;	
+}
+
+.temp-pos { /** short for 'template positioning' */
+	position: relative;
+	left: 290px;
+	margin-bottom: 50px;
+}

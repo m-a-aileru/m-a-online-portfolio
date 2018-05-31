@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="iqm-style.css" >
+	<title>Inspirational Quote Machine - The App</title>
+</head>
+
+<body>
+	<h1>INSPIRATIONAL QUOTE MACHINE</h1>
+
+	<p id="intro">Need a few words of wisdom to pick you up? Just click the 'Generate Quote' button to help you to a more optimistic outlook.</p>
+
+	<input type="button" name="generate" value="Generate Quote" onclick="generateQuote()">
+	
+	<div id="bottom-half">
+		<p><b><output id="quote"></output></b></p>
+	</div>
+	
+	<script>
+		var value;
+		var quotes = ["Speak the truth and in turn let the truth speak for itself.", 
+					  "Thoughts, by themselves, are powerless. It's action that gives them weight.", 
+					  "Even failed experiences can amount to something.", 
+					  "It's almost always easy and cowardly to hate, but takes a brave heart to love and accept.", 
+					  "Don't compare yourself to the past. You change all the time without even knowing it.", 
+					  "Learn and understand the science before you define the art."];
+		
+		function generateQuote() { 
+			value = Math.round(Math.random() * 5);
+			document.getElementById('quote').innerHTML = quotes[value];
+		}		
+	</script>		
+</body>
+</html>
+
+

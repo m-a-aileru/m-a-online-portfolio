@@ -1,0 +1,36 @@
+/**
+ * Original stylesheet for 'Live Your Life'
+ */
+
+body {
+	background-color: #55D4FF;
+	text-align: center;
+}
+
+#outdoors-pic {
+	width: 300px; 
+	height: 200px;
+	margin-right: 100px;
+	margin-bottom: 120px;
+}
+
+#indoors-pic {
+	width: 200px; 
+	height: 250px;
+	margin-left: 100px;
+	margin-bottom: 115px;
+}
+
+#go-outside-pic {
+	width: 350px; 
+	height: 250px;
+	margin-right: 100px;
+	margin-bottom: 80px;
+}
+
+#stay-indoors-pic {
+	width: 400px; 
+	height: 250px;
+	margin-right: 100px;
+	margin-bottom: 80px;
+}

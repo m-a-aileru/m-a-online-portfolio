@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFF9F9;
+  color: #272727;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header h1 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 12px 25px;
+}
+
+.main-header h1 .logo {
+  font-weight: bold;
+}
+
+.main-header .hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 25px;
+}
+
+.main-header .hamburger-menu div {
+  width: 30px;
+  height: 5px;
+  margin: 3px 0;
+  background-color: #272727;
+}
+
+.section-header {
+  border: 2px solid #272727;
+  margin: 15px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  border: 1px solid green;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.hero .mid-hero {
+  border: 1px solid red;
+  margin: auto;
+}
+
+.hero .mid-hero p {
+  font-size: 1.65em;
+}
+
+.hero .mid-hero .logo-box {
+  border: 2px solid #272727;
+}
+/*# sourceMappingURL=style.css.map */

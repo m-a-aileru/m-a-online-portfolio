@@ -1,0 +1,100 @@
+$mainColour: #FFF9F9;
+$secColour: #272727; // might change later, we'll see...
+$headerFont: 'Roboto Mono', monospace;
+$mainFont: 'Roboto', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $mainColour;
+    color: $secColour;
+}
+
+.container {    
+    display: flex;
+    flex-direction: column;
+    font-family: $mainFont;
+}
+
+.main-header {
+    display: flex;     
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 2em;
+        font-weight: normal;
+        margin: 12px 25px;
+
+        .logo {
+            font-weight: bold;
+        }
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 12px 25px;
+        
+        div {
+            width: 30px;
+            height: 5px;
+            margin: 3px 0;
+            background-color: #272727;
+        }
+    }
+}
+
+.section-header {
+    border: 2px solid $secColour;
+    margin: 15px;
+    font-family: $headerFont; 
+
+    h2 {
+
+    }
+}
+
+
+
+.hero {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid green;
+    margin-top: 65px;
+    text-align: center;
+    // align-items: space-around;
+    
+    .mid-hero { 
+        // display: flex;
+        
+        
+        border: 1px solid red;
+        margin: auto;
+
+        p {
+            font-size: 1.65em;
+            // width: 50%;
+        }
+
+        .logo-box {
+            // width: 50%;
+            border: 2px solid $secColour;
+            // align-self: flex-end;
+
+            p {
+                // font-size: large;
+                // font-weight: 700;
+                // margin: auto;
+                // padding: 0;
+            }
+        }
+    }
+
+    
+}
+

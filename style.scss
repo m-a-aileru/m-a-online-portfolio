@@ -1,7 +1,7 @@
 $mainColour: #FFF9F9;
 $secColour: #272727; // might change later, we'll see...
-$headerFont: 'Roboto Mono', monospace;
-$mainFont: 'Roboto', sans-serif;
+$headerFont: 'Verdand Mono', monospace;
+$mainFont: 'Verdana', sans-serif;
 
 * {
     margin: 0;
@@ -25,8 +25,9 @@ body {
     align-items: center;
 
     h1 {
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: normal;
+        font-family: $headerFont;
         margin: 12px 25px;
 
         .logo {
@@ -52,10 +53,11 @@ body {
 .section-header {
     border: 2px solid $secColour;
     margin: 15px;
-    font-family: $headerFont; 
-
+    
     h2 {
-
+        font-family: $headerFont; 
+        font-size: 2em;
+        text-align: center;
     }
 }
 
@@ -65,36 +67,73 @@ body {
     display: flex;
     flex-flow: column wrap;
     border: 1px solid green;
-    margin-top: 65px;
+    // margin-top: 65px;
     text-align: center;
-    // align-items: space-around;
+    
+    align-items: space-around;
     
     .mid-hero { 
         // display: flex;
-        
+        width: 75%;
         
         border: 1px solid red;
         margin: auto;
 
         p {
-            font-size: 1.65em;
+            font-size: 3em;
             // width: 50%;
+            padding: 45px 0;
         }
 
         .logo-box {
             // width: 50%;
             border: 2px solid $secColour;
+            margin: 45px 0;
             // align-self: flex-end;
 
             p {
                 // font-size: large;
                 // font-weight: 700;
                 // margin: auto;
-                // padding: 0;
+                font-size: 6em;
+                font-weight: 700;
+                font-family: $headerFont;
+                padding: 160px 0;
             }
         }
     }
 
+    .calls-to-action {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        border: 1px solid purple;
+        width: 75%;
+        margin: auto;
+        margin-top: 45px;
+        margin-bottom: 45px;
+
+        #view-work-button, #contact-button {
+            border: none;
+            font-size: 4em;
+            font-family: $mainFont;
+            padding: 0.5em;
+            margin-bottom: 0.75em;
+        }
+
+        #view-work-button {
+            background-color: $secColour;
+            color: $mainColour;
+        }
+
+        #contact-button {   
+            background-color: $mainColour;
+            color: $secColour;
+            border: 2px solid $secColour;
+        }
+
+    }
     
 }
 

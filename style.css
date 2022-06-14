@@ -16,7 +16,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: "Verdana", sans-serif;
 }
 
 .main-header {
@@ -32,8 +32,9 @@ body {
 }
 
 .main-header h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: normal;
+  font-family: "Verdand Mono", monospace;
   margin: 12px 25px;
 }
 
@@ -65,7 +66,12 @@ body {
 .section-header {
   border: 2px solid #272727;
   margin: 15px;
-  font-family: "Roboto Mono", monospace;
+}
+
+.section-header h2 {
+  font-family: "Verdand Mono", monospace;
+  font-size: 2em;
+  text-align: center;
 }
 
 .hero {
@@ -77,20 +83,66 @@ body {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   border: 1px solid green;
-  margin-top: 65px;
   text-align: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
 }
 
 .hero .mid-hero {
+  width: 75%;
   border: 1px solid red;
   margin: auto;
 }
 
 .hero .mid-hero p {
-  font-size: 1.65em;
+  font-size: 3em;
+  padding: 45px 0;
 }
 
 .hero .mid-hero .logo-box {
+  border: 2px solid #272727;
+  margin: 45px 0;
+}
+
+.hero .mid-hero .logo-box p {
+  font-size: 6em;
+  font-weight: 700;
+  font-family: "Verdand Mono", monospace;
+  padding: 160px 0;
+}
+
+.hero .calls-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid purple;
+  width: 75%;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.hero .calls-to-action #view-work-button, .hero .calls-to-action #contact-button {
+  border: none;
+  font-size: 4em;
+  font-family: "Verdana", sans-serif;
+  padding: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.hero .calls-to-action #view-work-button {
+  background-color: #272727;
+  color: #FFF9F9;
+}
+
+.hero .calls-to-action #contact-button {
+  background-color: #FFF9F9;
+  color: #272727;
   border: 2px solid #272727;
 }
 /*# sourceMappingURL=style.css.map */

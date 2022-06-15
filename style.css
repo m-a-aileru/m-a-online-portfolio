@@ -72,6 +72,7 @@ body {
   font-family: "Verdand Mono", monospace;
   font-size: 2em;
   text-align: center;
+  padding: 0.25em;
 }
 
 .hero {
@@ -127,7 +128,8 @@ body {
   margin-bottom: 45px;
 }
 
-.hero .calls-to-action #view-work-button, .hero .calls-to-action #contact-button {
+.hero .calls-to-action a#view-work-link, .hero .calls-to-action a#contact-link {
+  text-decoration: none;
   border: none;
   font-size: 4em;
   font-family: "Verdana", sans-serif;
@@ -135,14 +137,54 @@ body {
   margin-bottom: 0.75em;
 }
 
-.hero .calls-to-action #view-work-button {
+.hero .calls-to-action a#view-work-link {
   background-color: #272727;
   color: #FFF9F9;
 }
 
-.hero .calls-to-action #contact-button {
+.hero .calls-to-action a#contact-link {
   background-color: #FFF9F9;
   color: #272727;
   border: 2px solid #272727;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-me p {
+  width: 75%;
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+  padding: 2em 0;
+  line-height: 2em;
+}
+
+.my-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.my-skills .section-header {
+  width: 100%;
+}
+
+.my-skills .skill {
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */

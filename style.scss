@@ -58,6 +58,7 @@ body {
         font-family: $headerFont; 
         font-size: 2em;
         text-align: center;
+        padding: 0.25em;
     }
 }
 
@@ -68,8 +69,7 @@ body {
     flex-flow: column wrap;
     border: 1px solid green;
     // margin-top: 65px;
-    text-align: center;
-    
+    text-align: center;    
     align-items: space-around;
     
     .mid-hero { 
@@ -114,7 +114,13 @@ body {
         margin-top: 45px;
         margin-bottom: 45px;
 
-        #view-work-button, #contact-button {
+        // a {
+        //     text-decoration: none;
+        //     color: black;
+        // }
+
+        a#view-work-link, a#contact-link {
+            text-decoration: none;
             border: none;
             font-size: 4em;
             font-family: $mainFont;
@@ -122,12 +128,12 @@ body {
             margin-bottom: 0.75em;
         }
 
-        #view-work-button {
+        a#view-work-link {
             background-color: $secColour;
             color: $mainColour;
         }
 
-        #contact-button {   
+        a#contact-link {   
             background-color: $mainColour;
             color: $secColour;
             border: 2px solid $secColour;
@@ -135,5 +141,38 @@ body {
 
     }
     
+}
+
+.about-me {
+    display: flex; 
+    flex-direction: column;    
+    
+    
+    p {
+        width: 75%;
+        font-size: 2em;
+        text-align: center;
+        margin: auto;
+        padding: 2em 0;
+        line-height: 2em;
+    }
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    
+
+    .section-header {
+        width: 100%;
+    }
+
+    
+
+    .skill {
+        width: 40%;
+        // margin: auto;
+        align-self: center;
+    }
 }
 

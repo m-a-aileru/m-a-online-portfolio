@@ -209,13 +209,16 @@ a:link, a:visited {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 5em;
 
     .work {
         margin: auto;
 
         div {
             // width: 100%;
-            border: 2px solid black;
+            border: 3px solid black;
+            margin: 2em 0;
+
         }
 
         .placeholder {
@@ -223,14 +226,27 @@ a:link, a:visited {
             // display: flex;
             // flex-direction: column;
             width: 100%;
+
+            p {
+                font-size: 3em;
+            }
         }
 
         .real {
             // margin: 12.5px;
 
             img {
-                width: 100%;
+                // width: 100%;
             }
-        }
+        // }
+
+        // .my-work-para {
+        //     margin: 44em 0;
+        // }
     }
+
+    p {
+        font-size: 2em;
+    }
+
 }

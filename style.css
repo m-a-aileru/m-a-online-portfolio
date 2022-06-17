@@ -229,6 +229,7 @@ a:link, a:visited {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-bottom: 5em;
 }
 
 .my-work .work {
@@ -236,7 +237,8 @@ a:link, a:visited {
 }
 
 .my-work .work div {
-  border: 2px solid black;
+  border: 3px solid black;
+  margin: 2em 0;
 }
 
 .my-work .work .placeholder {
@@ -244,7 +246,15 @@ a:link, a:visited {
   width: 100%;
 }
 
-.my-work .work .real img {
-  width: 100%;
+.my-work .work .placeholder p {
+  font-size: 3em;
+}
+
+.my-work .work .my-work-para {
+  margin: 44em 0;
+}
+
+.my-work p {
+  font-size: 2em;
 }
 /*# sourceMappingURL=style.css.map */

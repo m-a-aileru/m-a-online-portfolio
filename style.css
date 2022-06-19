@@ -6,6 +6,7 @@
 body {
   background: #FFF9F9;
   color: #272727;
+  width: 100%;
 }
 
 .container {
@@ -24,6 +25,7 @@ a:link, a:visited {
 }
 
 .main-header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,12 +35,14 @@ a:link, a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 15px;
+  border: 2px solid #272727;
 }
 
 .main-header h1 {
-  font-size: 2.5em;
+  font-size: 1.5rem;
   font-weight: normal;
-  font-family: "Verdand Mono", monospace;
+  font-family: "Verdana Mono", monospace;
   margin: 12px 25px;
 }
 
@@ -61,9 +65,9 @@ a:link, a:visited {
 }
 
 .main-header .hamburger-menu div {
-  width: 30px;
+  width: 7.5vw;
   height: 5px;
-  margin: 3px 0;
+  margin: 0.4em 0;
   background-color: #272727;
 }
 
@@ -73,8 +77,9 @@ a:link, a:visited {
 }
 
 .section-header h2 {
-  font-family: "Verdand Mono", monospace;
+  font-family: "Verdana Mono", monospace;
   font-size: 2em;
+  color: #272727;
   text-align: center;
   padding: 0.25em;
 }
@@ -106,15 +111,25 @@ a:link, a:visited {
 }
 
 .hero .mid-hero .logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 2px solid #272727;
   margin: 45px 0;
+  width: 71.5vw;
+  height: 40vh;
 }
 
 .hero .mid-hero .logo-box p {
-  font-size: 6em;
+  font-size: 3em;
   font-weight: 700;
-  font-family: "Verdand Mono", monospace;
-  padding: 160px 0;
+  font-family: "Verdana Mono", monospace;
 }
 
 .hero .calls-to-action {
@@ -135,7 +150,7 @@ a:link, a:visited {
 .hero .calls-to-action a#view-work-link, .hero .calls-to-action a#contact-link {
   text-decoration: none;
   border: none;
-  font-size: 4em;
+  font-size: 2em;
   font-family: "Verdana", sans-serif;
   padding: 0.5em;
   margin-bottom: 0.75em;
@@ -179,6 +194,12 @@ a:link, a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .my-skills .section-header {
@@ -217,7 +238,7 @@ a:link, a:visited {
 }
 
 .my-skills .more-info a:link, .my-skills .more-info a:visited {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .my-work {
@@ -232,29 +253,117 @@ a:link, a:visited {
   margin-bottom: 5em;
 }
 
-.my-work .work {
-  margin: auto;
-}
-
 .my-work .work div {
-  border: 3px solid black;
-  margin: 2em 0;
-}
-
-.my-work .work .placeholder {
-  padding: 40vh 0;
   width: 100%;
-}
-
-.my-work .work .placeholder p {
-  font-size: 3em;
-}
-
-.my-work .work .my-work-para {
-  margin: 44em 0;
+  border: 3px solid black;
 }
 
 .my-work p {
+  font-size: 2em;
+}
+
+.contact-me form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 15px;
+  padding: 4em 0 2em 0;
+}
+
+.contact-me form label {
+  font-size: 1.5em;
+}
+
+.contact-me form input[type=text] {
+  height: 7vh;
+  font-size: 4vh;
+  padding-left: 0.5em;
+  border: 2px solid black;
+  border-radius: 0%;
+}
+
+.contact-me form input[type=text]:focus {
+  background-color: #ffd19c;
+  border: 3px solid black;
+  border-radius: 0%;
+}
+
+.contact-me form textarea {
+  max-width: 100%;
+  max-height: 30vh;
+  height: 25vh;
+  font-size: 4vh;
+  padding: 0.5em;
+  border: 2px solid black;
+  border-radius: 0%;
+}
+
+.contact-me form textarea:focus {
+  background-color: #ffd19c;
+  border: 3px solid black;
+  border-radius: 0%;
+}
+
+.contact-me form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: #272727;
+  color: #FFF9F9;
+  text-align: center;
+  padding: 1em 0.25em 1em 1.25em;
+  margin-top: 1em;
+}
+
+.contact-me form button .button-text {
+  margin-right: 1.5em;
+  font-size: 4em;
+}
+
+.contact-me form button img {
+  width: 8%;
+  height: 8%;
+}
+
+.contact-me .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10rem 0;
+}
+
+.contact-me .social-links div img {
+  width: 250px;
+  height: 200px;
+}
+
+.contact-me .social-links div a span {
+  display: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid black;
+  padding: 3em 2em;
   font-size: 2em;
 }
 /*# sourceMappingURL=style.css.map */

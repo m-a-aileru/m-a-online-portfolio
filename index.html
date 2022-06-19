@@ -16,13 +16,15 @@
 </head>
 <body>
     <div class="container">
-        <header class="section-header main-header">
+        <header class="main-header">
             <h1><span class="logo">[MA]</span> MATTHEW AILERU</h1>
     
             <div class="hamburger-menu">
-                <div></div>
-                <div></div>
-                <div></div>
+                <a href="">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
             </div>
         </header>
 
@@ -75,6 +77,7 @@
 
             <div class="skill">
                 <img src="icons/js.svg" alt="Javascript logo" />
+                <!-- The id is only for use in mobile view -->
                 <p>Javascript</p>
             </div>
 
@@ -106,22 +109,22 @@
 
             <div class="work">
                 <div class="placeholder">
-                    <p>KEYBOARD TESTER APP coming soon</p>
+                    <!-- <p>KEYBOARD TESTER APP coming soon</p> -->
                 </div>
                 <div class="real">
-                    <img src="images/odm.png" alt="Online Drum Machine screenshot" />
+                    <!-- <img src="images/odm.png" alt="Online Drum Machine screenshot" /> -->
                 </div>
                 <div class="real">
-                    <img src="images/lnp.png" alt="Lottery Number Picker screenshot" />
+                    <!-- <img src="images/lnp.png" alt="Lottery Number Picker screenshot" /> -->
                 </div>
                 <div class="real">
-                    <img src="images/cur-con.png" alt="Currency Conventer screenshot" />
+                    <!-- <img src="images/cur-con.png" alt="Currency Conventer screenshot" /> -->
                 </div>
                 <div class="placeholder">
-                    <p>THE ADVICE DISPENSER coming soon</p>
+                    <!-- <p>THE ADVICE DISPENSER coming soon</p> -->
                 </div>
                 <div class="placeholder">
-                    <p>WEATHER APP coming soon</p>
+                    <!-- <p>WEATHER APP coming soon</p> -->
                 </div>
             </div>
             
@@ -140,22 +143,23 @@
                 <label for="contact-details">Contact details (email or phone no.)</label><br>
                 <input type="text" id="contact-details" name="contact-details"><br><br>
                 <label for="user-msg">Your message</label><br>
-                <input type="textarea" id="user-msg" name="user-msg"><br><br>
+                <!-- <input type="textarea" id="user-msg" name="user-msg"><br><br> -->
+                <textarea name="user-msg" id="user-msg"></textarea>
                 <!-- <input type="submit" value="Submit"> -->
-                <button>Send message<img src="icons/paper-plane-solid.svg" alt="Send msg icon" /></button>
+                <button><span class="button-text">Send message</span><img src="icons/paper-plane-solid.svg" alt="Send msg icon" /></button>
             </form> 
 
             <div class="social-links">
-                <div><img src="icons/email.svg" alt="Email icon"/><a href="">Email</a></div>
-                <div><img src="icons/linkedin.svg" alt="LinkedIn icon"/><a href="">LinkedIn</a></div>
-                <div><img src="icons/twitter.svg" alt="Twitter icon"/><a href="">Twitter</a></div>
+                <div class="email"><a href=""><img src="icons/email.svg" alt="Email icon" /><span>Email</span></a></div>
+                <div class="linkedin"><a href=""><img src="icons/linkedin.svg" alt="LinkedIn icon" /><span>LinkedIn</span></a></div>
+                <div class="twitter"><a href=""><img src="icons/twitter.svg" alt="Twitter icon" /><span>Twitter</span></a></div>
             </div>
 
         </div>
 
         <footer>
             <p>&copy; Copyright 2022 Matthew Aileru</p>
-            <p>^ BACK TO TOP</p>
+            <a href="#hero-section">^ BACK TO TOP</a>
         </footer>
     </div>
 </body>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+      body {
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      /* .section-header h1 { 
+        color: white;
+      } */
+      #navbar {
+        /* margin-left: 600px; */
+        width: 100%;
+        /* max-width: 100%; - might be redundant */
+        height: 6vh;
+        
+        
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      #logo {
+        
+      }
+
+      .body-wrapper {
+        margin-top: 5.75vh;  
+        /* width: 100%; */
+      }
+
+    </style>
+  </head>
+  <body class="has-background-warning-light">
+    <div class="">
+        <!-- <header class="header nav__header block">
+            <h1 class="nav__heading">
+                <span class="nav__logo">[MA]</span> MATTHEW AILERU
+                <button class="nav__hamburger-icon navbar-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </h1>
+        </header> -->
+        <nav class="navbar has-background-warning" id="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item is-size-4-touch is-size-3 has-text-weight-semibold ml-3" id="logo" href="">
+                [MA] MATTHEW AILERU
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <div class="navbar-item has-text-weight-medium">
+                  <a class="p-4 is-size-5" href="">ABOUT ME</a>
+                  <a class="p-4 is-size-5" href="">MY SKILLS/CV</a>
+                  <a class="p-4 is-size-5" href="">MY WORK</a>
+                  <a class="p-4 is-size-5" href="">CONTACT ME</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!--  solution 1 -->
+          <!--
+          <section class="hero is-fullheight-with-navbar">
+            <div class="hero-body is-flex is-flex-direction-column is-justify-content-space-around">
+              <div class="hero-text is-size-4 has-text-centered"> 
+                <p class="">
+                    YOU CAN CALL ME MATT.
+                  </p>
+                  <p class="">
+                    I <span class="has-text-weight-bold">IDEALISE</span> AND <span class="has-text-weight-bold">REALISE</span> DESIGNS INTO <span class="has-text-weight-bold">SITES</span> AND <span class="has-text-weight-bold">APPS</span>.
+                  </p>
+              </div>
+              <div class="box is-size-1 has-text-weight-bold p-6">MA</div> 
+              <div class="hero-buttons is-flex is-flex-direction-column"> 
+                <a class="is-size-4 has-background-black has-text-warning-light px-6 py-3" href="">VIEW MY WORK</a>
+                <a class="is-size-4 has-text-centered has-background-warning has-text-black px-6 py-3 mt-4" href="">CONTACT ME</a>
+              </div>
+            </div>
+          </section> -->
+
+          <!-- solution 2 -->
+          <!-- <section class="hero is-fullheight-with-navbar">
+            <div class="hero-body is-flex is-flex-direction-column is-justify-content-space-around">
+              <div class="columns is-multiline is-centered">
+                <div class="column is-half is-size-4 has-text-centered">
+                    <p class="">
+                        YOU CAN CALL ME MATT.
+                    </p>
+                    <p class="">
+                        I <span class="has-text-weight-bold">IDEALISE</span> AND <span class="has-text-weight-bold">REALISE</span> DESIGNS INTO <span class="has-text-weight-bold">SITES</span> AND <span class="has-text-weight-bold">APPS</span>.
+                    </p>
+                </div>
+                <div class="column is-half box is-size-1 has-text-weight-bold p-6">
+                    MA
+                </div>
+                <div class="column is-half">
+                    <a class="is-size-4 has-text-centered has-background-black has-text-warning-light px-6 py-3" href="">VIEW MY WORK</a>
+                </div>
+                <div class="column is-half">
+                    <a class="is-size-4 has-text-centered has-background-warning has-text-black px-6 py-3" href="">CONTACT ME</a>
+                </div>
+              </div>  
+            </div>
+          </section>  -->
+            
+
+            <!-- solution 3-->
+            <div class="body-wrapper">
+              <section class="hero is-fullheight-with-navbar mt-6">
+              <div class="hero-body is-flex is-flex-direction-column is-justify-content-space-around">
+                <div class="columns is-centered is-vcentered"> 
+                  <div class="column is-half is-size-3 has-text-centered block">
+                      <p class="">
+                          YOU CAN CALL ME MATT.
+                      </p>
+                      <p class="">
+                          I <span class="has-text-weight-bold">IDEALISE</span> AND <span class="has-text-weight-bold">REALISE</span> DESIGNS INTO <span class="has-text-weight-bold">SITES</span> AND <span class="has-text-weight-bold">APPS</span>.
+                      </p>
+                  </div>
+                  <div class="column is-half box is-size-1 has-text-weight-bold p-6 block has-text-centered">
+                      MA
+                  </div>
+              </div>   
+  
+              <div class="columns is-centered mt-6">
+                <div class="column is-8 is-size-3 has-text-centered block"><a class="has-background-black has-text-warning-light px-6 py-3" href="">VIEW MY WORK</a></div>
+                <div class="column is-8 is-size-3 has-text-centered block"><a class="has-background-warning has-text-black px-6 py-3" href="">CONTACT ME</a></div>
+              </div>   
+            </section>
+            
+        
+        <!-- ABOUT ME -->
+        <section class="section">
+          <div class="rows has-text-centered">
+            <div class="row section-header">
+              <h1 class="title is-size-4 px-5 py-1 has-background-warning">ABOUT ME</h1>
+            </div>
+            <div class="row block mt-4">
+              <p>
+                I'm a UK-based front-end developer (and occasional designer) with an appetite for building tools and utilities
+                as well as other experiences to aid end users in their everyday lives.
+              </p>
+            </div>
+            <div class="row block">
+              <p>
+                At the same time, I'm always looking to build and develop upon my current skills and learn about new things
+                in the ever-developing and exciting world of tech and design.
+              </p>
+            </div>
+            <div class="row block">
+              <p>
+                When I'm not feeding myself with an incessant amount of code, I like to otherwise do so while exploring my love of food.
+                I also enjoy music, sports, reading, fitness, video games, watching anime and whatever looks good on Netflix and Amazon Prime,
+                and generally being on the lookout for adventure, all while being powered by the magical brown elixir known as coffee. 
+              </p>
+            </div>
+            <div class="row block">
+              <p>Anyway, this being one of many places I live on the internet, come in, kick your shoes off and come and see my work.</p>
+            </div>
+            <div class="row block">
+              <p>Or drop me a line. Whatever suits you.</p>
+            </div>
+          </div>
+        </section>
+       
+        <!-- MY SKILLS/CV -->
+       <section class="section">
+        <div class="column section-header">
+          <h1 class="title is-size-4 px-5 py-1 has-background-warning">MY SKILLS/CV</h1>
+        </div>
+        <!-- <div class="columns has-text-centered is-multiline is-centered"> -->
+          <!-- section title was here before -->
+          <!-- <div class="column block mt-4 image is-128x128 is-one-third is-half-touch">
+            <img src="icons/html5.svg" alt="HTML5 logo">
+            <p>HTML</p>
+          </div>
+          <div class="column block image is-128x128 is-one-third is-half-touch">
+            <img src="icons/css3.svg" alt="CSS3 logo">
+            <p>CSS</p>
+          </div>
+          <div class="column block image is-128x128 is-one-third is-half-touch">
+            <img src="icons/js.svg" alt="JavaScript logo">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="columns has-text-centered is-multiline is-centered mt-5">
+          <div class="column block image is-128x128 is-one-third is-half-touch">
+            <img src="icons/sass.svg" alt="Sass logo">
+            <p>Sass</p>
+          </div>
+          <div class="column block image is-128x128 is-one-third is-half-touch">
+            <img src="icons/figma.svg" alt="Figma logo">
+            <p>Figma</p>
+          </div>
+          <div class="column block image is-128x128 is-one-third is-half-touch">
+            <img src="icons/git.svg" alt="Git logo">
+            <p>Git</p>
+          </div> 
+        </div> -->
+        <div class="container skills-container is-flex is-flex-wrap-wrap is-justify-content-space-around is-align-items-center">
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="skills-container__image image is-fullwidth" src="icons/html5.svg" alt="HTML5 logo">
+            <!-- <img class="skills-container__image image is-fullwidth" src="icons/html5.svg" alt="HTML5 logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">HTML</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="icons/css3.svg" alt="CSS3 logo">
+            <!-- <img class="image is-fullwidth" src="icons/css3.svg" alt="CSS3 logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">CSS</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="icons/js.svg" alt="JavaScript logo">
+            <!-- <img class="image is-fullwidth" src="icons/js.svg" alt="JavaScript logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">JavaScript</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="icons/sass.svg" alt="Sass logo">
+            <!-- <img class="image is-fullwidth" src="icons/sass.svg" alt="Sass logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Sass</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="icons/figma.svg" alt="Figma logo">
+            <!-- <img class="image is-fullwidth" src="icons/figma.svg" alt="Figma logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Figma</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="icons/git.svg" alt="Git logo">
+            <!-- <img class="image" src="icons/git.svg" alt="Git logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Git</span>
+          </div>
+        </div>
+        <p class="is-size-4 is-size-3-desktop mt-6 has-text-centered">Want to know more about my skills? <a href="">Here's my CV.</a></p>
+      </section>
+
+      <!-- MY WORK -->
+      <section class="section">
+        <div class="column section-header">
+          <h1 class="title is-size-4 px-5 py-1 has-background-warning">MY WORK</h1>
+        </div>
+
+        <div class="container skills-container is-flex is-flex-wrap-wrap is-justify-content-space-around is-align-items-center">
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="skills-container__image image" src="images/iqm.png" alt="Inspirational Quote Machine screenshot">
+            <!-- <img class="skills-container__image image is-fullwidth" src="icons/html5.svg" alt="HTML5 logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Inspirational Quote Machine</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image" src="images/odm.png" alt="Online Drum Machine screenshot">
+            <!-- <img class="image is-fullwidth" src="icons/css3.svg" alt="CSS3 logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Online Drum Machine</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="images/lnp.png" alt="Lottery Number Picker screenshot">
+            <!-- <img class="image is-fullwidth" src="icons/js.svg" alt="JavaScript logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Lottery Number Picker</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="images/cur-con.png" alt="Currency Converter screenshot">
+            <!-- <img class="image is-fullwidth" src="icons/sass.svg" alt="Sass logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Currency Converter</span>
+          </div>
+          <div class="is-flex is-flex-direction-column is-align-items-center block pb-5">
+            <img class="image is-fullwidth" src="images/ecse.png" alt="Eternal Card Search Engine screenshot">
+            <!-- <img class="image is-fullwidth" src="icons/figma.svg" alt="Figma logo" width="128"> -->
+            <span class="is-size-2 is-size-4-desktop">Eternal Card Search Engine</span>
+          </div>
+        </div>
+        <p class="is-size-4 is-size-3-desktop mt-6 has-text-centered">Want to see the codebases and yet more work? Check out my <a href="">GitHub profile</a>.</p>
+        </section>
+
+        <!-- CONTACT ME -->
+      <section class="section">
+        <div class="column section-header">
+          <h1 class="title is-size-4 px-5 py-1 has-background-warning">CONTACT ME</h1>
+        </div>
+        <div class="contact-form rows">
+          <div class="field is-horizontal row">
+            <!-- Name -->
+            <div class="field-label">
+              <label class="label" for="user-name">Name</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" placeholder="Fun sized input">
+                </div> <!-- control -->
+              </div>
+            </div>
+          </div> <!-- field -->
+          <!-- Email -->
+          <div class="field is-horizontal row">
+            <div class="field-label">
+              <label class="label" for="user-email">Email</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="email">
+                </div> <!-- control -->
+              </div>
+            </div> <!-- field-body --> 
+          </div> <!-- field -->
+          <!-- Your message textarea -->
+          <div class="field is-horizontal row">
+            <div class="field-label">
+              <label class="label" for="user-msg">Your message</label>
+            </div>
+            <div class="field-body">
+              <div class="control">
+                <textarea class="textarea" placeholder="Normal textarea"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="field row">
+            <div class="control">
+              <button class="button">Send message</button>
+            </div>
+          </div>
+        </div><!-- contact-form -->
+      </section> <!-- contact me section -->
+            </div> 
+            
+
+      
+        <footer class="footer has-background-warning">
+          <div class="content has-text-centered is-flex is-justify-content-space-between is-align-items-center">
+            <p>
+              &copy; Copyright 2022 Matthew Aileru
+            </p>
+            <a class="" href="">^ BACK TO TOP</a>
+          </div>
+        </footer>
+          
+    </div> <!-- main container -->
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+  </body>
+</html>

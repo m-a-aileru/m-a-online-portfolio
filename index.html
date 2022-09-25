@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matthew Aileru's Web Portfolio</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <style>
+    /* .navbar-item:hover {
+      background-color: aliceblue;
+      color: blue;
+    } */
+    /* a.work-link {
+      margin-right: 2.5em;
+    } */
+
+    #work {
+      width: 1em;
+      height: 1.5em;
+      /* margin-right: 0.25em; */
+      margin: 0 0.25em;
+    }
+
+    @media screen and (min-width: 992px) {
+      /* #work {
+      
+      
+          } */
+    }
+    
+  </style>
+</head>
+
+<body>
+    <nav class="navbar is-warning is-fixed-top">
+        <div class="navbar-brand">
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu has-background-warning">
+            <div class="navbar-end">
+                <a class="navbar-item has-text-dark" href="#about-me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                  <span>About Me</span>
+                </a>
+                <a class="navbar-item has-text-dark" href="#my-skills">
+                  <span class="icon">
+                    <i class="fas fa-bars"></i>
+                  </span>
+                  <span>My Skills</span>
+                </a>
+                <a class="navbar-item has-text-dark" href="#my-cv">
+                  <span class="icon">
+                    <i class="fas fa-file-alt"></i>
+                  </span>
+                  <span>My CV</span>
+                </a>
+                <a class="navbar-item has-text-dark" href="#my-work">
+                  <span class="icon" id="work">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#363636"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
+                  </span>
+                  <span>My Work</span>
+                </a>
+                <a class="navbar-item has-text-dark" href="#contact">
+                  <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Contact Me</span>
+                </a>
+            </div>
+        </div>    
+    </nav>
+
+  <!-- Hero -->
+  <section class="hero is-link is-fullheight is-fullheight-with-navbar has-background-warning-light has-text-grey">
+    <div class="hero-body">
+      <div class="container">Greetings. I am...
+        <h1 class="title is-1 has-text-dark">
+          MATTHEW AILERU
+        </h1>
+        <h2 class="subtitle is-3 has-text-grey">
+          Front-End Web Developer
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="section" id="about-me">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title has-text-centered-touch has-text-left">About Me</h3>
+      <!-- <h4 class="subtitle is-centered">Jack of all trades, master of "some"</h4> -->
+    </div>
+    <br>
+    <div class="container">
+      <p class="block">I'm a UK-based front-end developer (and occasional designer) with an appetite for building tools and 
+          utilities as well as other experiences to aid end users in their everyday lives. I usually favour simplicity and 
+          minimalism but I occasionally like to take experimental approaches in terms of design and functionality to further 
+          discover and explore new opportunities in both areas.</p>
+      <p class="block">At the same time, I'm always looking to build and develop upon my current skills and learn about new 
+          things in the ever-developing and exciting world of tech and design.</p>
+    </div>
+  </section>
+
+  <!-- My Skills -->
+  <section class="section has-background-warning-light" id="my-skills">
+    <div class="section-heading">
+      <h3 class="title has-text-centered-touch has-text-left">My Skills</h3>
+      <!-- <h4 class="subtitle">What can I do for you?</h4> -->
+    </div>
+    <br>
+    <div class="container">
+      <div class="columns is-multiline my-3">
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="box">
+            <div class="content">
+              <!-- <img src="icons/html5.svg" alt="HTML5 logo" />   -->
+              <p class="is-size-3-touch is-size-4 has-text-centered">HTML</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="box">
+            <div class="content">
+              <!-- <img src="icons/css3.svg" alt="CSS3 logo" />   -->
+              <p class="is-size-3-touch is-size-4 has-text-centered">CSS</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="box">
+            <div class="content">
+              <!-- <img src="icons/js.svg" alt="Javascript logo" />   -->
+              <p class="is-size-3-touch is-size-4 has-text-centered">JavaScript</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="box">
+            <div class="content">
+              <!-- <img src="icons/sass.svg" alt="Sass logo" /> -->
+              <p class="is-size-3-touch is-size-4 has-text-centered">Sass</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="box">
+            <div class="content">
+              <!-- <img src="icons/figma.svg" alt="Figma logo" /> -->
+              <p class="is-size-3-touch is-size-4 has-text-centered">Figma</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="box">
+              <div class="content">
+                <!-- <img src="icons/git.svg" alt="Git logo" />   -->
+                <p class="is-size-3-touch is-size-4 has-text-centered">Git</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- My CV -->
+  <section class="section" id="my-cv">
+    <div class="section-heading">
+      <h3 class="title has-text-centered-touch has-text-left">My CV</h3>
+      <!-- <h4 class="subtitle is-5">More about my past</h4> -->
+    </div>
+    <br>
+    <div class="more-info">
+      <p class="has-text-centered">Want to find out more about my skills, abilities and background?</p>
+      <p class="has-text-centered">Just click below to have a look at my CV.</p>.
+    </div>
+    <div class="columns is-mobile">
+      <div class="column is-4"></div>
+      <div class="column is-4">
+        <a href="docs/cv.pdf" class="button is-warning is-medium is-flex has-text-dark" target="_blank">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>View My CV</span>
+        </a>
+      </div>
+      <div class="column is-4"></div>
+    </div>
+  </section>
+
+   <!-- My Work -->
+   <section class="section has-background-warning-light" id="my-work">
+    <div class="section-heading">
+      <h3 class="title has-text-centered-touch has-text-left">My Work</h3>
+      <!-- <h4 class="subtitle is-5">My latest works</h4> -->
+    </div>
+    <br>
+    <div class="container">
+      <div class="container my-work-container">
+        <div class="columns">
+          <div class="column is-4">
+            <!-- Online Drum Machine -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  Online Drum Machine
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/odm.png" alt="Online Drum Machine screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://tinyurl.com/online-drum-machine" class="card-footer-item has-background-warning has-text-grey" target="_blank">Preview</a>
+                <a href="https://github.com/m-a-aileru/online-drum-machine/tree/2022-update" class="card-footer-item has-background-warning-light has-text-black" target="_blank">Source Code</a>
+              </footer>
+            </div>        
+          </div>
+          <div class="column is-4">
+            <!-- Lottery Number Picker -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  Lottery Number Picker
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/lnp.png" alt="Lottery Number Picker screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://tinyurl.com/lot-num-pick" class="card-footer-item has-background-warning has-text-grey" target="_blank">Preview</a>
+                <a href="https://github.com/m-a-aileru/lottery-number-picker" class="card-footer-item has-background-warning-light has-text-black" target="_blank">Source Code</a>
+              </footer>
+            </div>        
+          </div>
+          <div class="column is-4">
+            <!-- Currency Converter -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  Currency Converter
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/cur-con.png" alt="Currency Converter screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://tinyurl.com/currency-convert" class="card-footer-item has-background-warning has-text-grey" target="_blank">Preview</a>
+                <a href="https://github.com/m-a-aileru/currency-converter" class="card-footer-item has-background-warning-light has-text-black" target="_blank">Source Code</a>
+              </footer>
+            </div>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me -->
+  <section class="section" id="contact">
+    <div class="section-heading">
+      <h3 class="title has-text-centered-touch has-text-left">Contact Me</h3>
+      <!-- <h4 class="subtitle is-5">Get in touch</h4> -->
+    </div>
+    <br>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <form action="https://formsubmit.co/matthew.a.aileru@gmail.com" method="post">
+            <div class="box has-background-warning">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" name="name" type="text" placeholder="Text input">
+                </div>
+              </div>
+              <!-- <input type="hidden" name="_next" value="whatever the page is"> -->
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" name="email" type="email" placeholder="Email input" value="">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" name="message" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="field is-grouped has-text-centered">
+                <div class="control">
+                  <button class="button is-warning is-large has-background-warning-light">
+                    <span>Send Message</span>
+                    <span class="icon">
+                      <!-- <i class="fas fa-envelope"></i> -->
+                      <img class="px-1" src="icons/paper-plane-solid.svg" alt="Send msg icon" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer has-background-warning has-text-centered">
+    <div class="section-heading">
+      <p class="has-text-dark">
+        &copy; Copyright 2022 Matthew Aileru
+      </div>
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    });
+  </script>
+</body>
+</html>
